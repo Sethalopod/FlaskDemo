@@ -76,3 +76,12 @@ Now go to localhost:5000 in your browser to view your webpage!
 
 # Database magic
 We will be using SQLalchemy as an [ORM](https://en.wikipedia.org/wiki/Object-relational_mapping) for our [postgres](https://www.postgresql.org/) database. This allows us to treat the tables and rows as objects for easier use in our program. 
+
+You'll need to install postgresql and get it running locally. The CS machines do not have postgresql installed so you'll have to install it on your own computer. Once you get your database running on AWS or Google Cloud you can set it up to allow connections from the outside (be aware of the security implications of this). 
+
+Then, we'll need another library in python to be able to communicate it with it:
+```
+(venv)virgo$ pip install pyscopg2
+```
+
+The example code shows how to set up a database including how to connect to the database, create tables, add rows to tables, and query. Please note that in the connection I supply all my credentials in plain text and publically posted on Github. Don't do that for your real database. 
