@@ -1,0 +1,12 @@
+<html>
+<body>
+	<h1> Students: </h2>
+	{% for student in students %}
+		<li>{{student.name}} {{student.grader.name }}</li>
+	{% endfor %}
+	<h1> Graders: </h2>
+	{% for grader in graders %}
+		<li>{{grader.name}}</li>
+	{% endfor %}
+</body>
+</html>	
