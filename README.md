@@ -81,7 +81,7 @@ You'll need to install postgresql and get it running locally. The CS machines do
 
 Then, we'll need another library in python to be able to communicate it with it:
 ```
-(venv)virgo$ pip install pyscopg2
+(venv)virgo$ pip install psycopg2
 ```
 
 The example code shows how to set up a database including how to connect to the database, create tables, add rows to tables, and query. Please note that in the connection I supply all my credentials in plain text and publically posted on Github. Don't do that for your real database. 
